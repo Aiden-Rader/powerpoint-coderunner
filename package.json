@@ -1,0 +1,14 @@
+{
+	"name": "powerpoint-coderunner",
+	"version": "1.0.0",
+	"description": "Run code directly within PowerPoint slides!",
+	"scripts": {
+		"start": "webpack-dev-server --mode development",
+		"build": "webpack --mode production"
+	},
+	"dependencies": {
+		"jquery": "^3.6.0",
+		"monaco-editor": "^0.40.0",
+		"office-addin-scripts": "^1.0.0"
+	}
+}
