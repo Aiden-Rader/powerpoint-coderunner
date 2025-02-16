@@ -1,27 +1,39 @@
+<!-- Here will be the editor content -->
+
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PowerPoint Code Runner</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Code Runner</title>
-	<link rel="stylesheet" href="editor.css">
-</head>
+		<!-- Monaco Editor, JQuery, and CSS Styles -->
+		<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.0/min/vs/loader.min.js"></script>
+		<script src="editor.js"></script>
+		<link href="editor.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<h2 id="title">PowerPoint Code Runner</h2>
 
-<body>
-	<div id="editor-container">
-		<textarea id="editor"></textarea>
-	</div>
-	<div id="output-container">
-		<pre id="output"></pre>
-	</div>
-	<button id="run-code">Run</button>
+		<!-- Tabs -->
+		<div class="tabs">
+			<div class="tab active" data-lang="python">Python</div>
+			<div class="tab" data-lang="java">Java</div>
+			<div class="tab" data-lang="cpp">C++</div>
+		</div>
 
-	<!-- Include jQuery from CDN -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<!-- Editor -->
+		<div id="editor">
+			<!-- Dynamically created -->
+		</div>
 
-	<!-- Include Editor JS file -->
-	<script src="editor.js"></script>
-</body>
+		<button id="run-button">Run Code</button>
 
+
+		<!-- Output Display -->
+		<pre id="output">
+			<!-- Dynamically created -->
+		</pre>
+	</body>
 </html>

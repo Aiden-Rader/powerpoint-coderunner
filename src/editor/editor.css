@@ -1,18 +1,48 @@
-#editor-container {
-	border: 1px solid #ddd;
-	padding: 10px;
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: 0px;
+}
+
+.tabs {
+	list-style-type: none;
 	margin-bottom: 10px;
+	justify-content: center;
+	display: flex;
 }
 
-#output-container {
-	background: #f9f9f9;
+.tab {
+	cursor: pointer;
+	padding: 10px 20px;
+	background-color: #222;
+	border: 1px solid #ccc;
+	border-bottom: none;
+}
+
+.tab.active {
+	background-color: #0078D4;
+}
+
+/* Editor styles */
+
+#editor {
+	width: 100%;
+	height: 300vh;
+	border: 1px solid #ccc;
+}
+
+#run-button {
 	padding: 10px;
-}
-
-button {
-	background-color: #0f9d58;
+	margin: 10px;
+	background-color: #4CAF50;
 	color: white;
 	border: none;
-	padding: 10px 20px;
 	cursor: pointer;
+}
+
+#output {
+	white-space: pre-wrap;
+	background: #eee;
+	padding: 10px;
+	margin-top: 10px;
 }
