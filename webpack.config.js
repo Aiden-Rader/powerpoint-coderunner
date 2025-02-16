@@ -6,7 +6,10 @@ module.exports = {
 		filename: 'bundle.js'
 	},
 	devServer: {
-		contentBase: './src',
+		static: {
+			directory: path.join(__dirname, 'src'),
+		},
+		compress: true,
 		port: 3000
 	}
 };
