@@ -1,5 +1,3 @@
-# This will run the backend of the code execution
-
 from flask import Flask, request, jsonify
 import subprocess
 import tempfile
